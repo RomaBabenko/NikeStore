@@ -1,0 +1,79 @@
+@mixin background($angle, $color1, $color2) {
+  background: linear-gradient($angle, $color1, $color2);
+}
+
+.pagination {
+  position: absolute;
+  left: 89%;
+  top: 29%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 200px;
+  z-index: 4;
+  //   border: 2px solid red;
+}
+
+.pagination-item {
+  // position: absolute;
+  //   border: 2px solid red;
+
+  // &--shoes1 {
+  //   bottom: 450px;
+  //   right: 0px;
+  //   transform: rotate(54deg);
+  // }
+
+  // &--shoes2 {
+  //   bottom: 360px;
+  //   right: 100px;
+  //   transform: rotate(32deg);
+  // }
+
+  // &--shoes3 {
+  //   bottom: 225px;
+  //   right: 130px;
+  // }
+
+  // &--shoes4 {
+  //   bottom: 85px;
+  //   right: 100px;
+  //   transform: rotate(-32deg);
+  // }
+
+  // &--shoes5 {
+  //   bottom: 0px;
+  //   right: 0px;
+  //   transform: rotate(-54deg);
+  // }
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 70px;
+  border-radius: 13px;
+  padding-bottom: 22px;
+  transition: transform 0.2s ease-in-out;
+
+  @include background(90deg, #0085ff, #ff67fa00);
+
+  img {
+    pointer-events: none;
+  }
+}
+
+.pagination-btn.active {
+  @include background(90deg, #ff0000, #ff67fa00);
+  transition: transform 0.2s ease;
+  transform: translateX(-15px);
+  pointer-events: none;
+}
+
+.pagination-btn:hover {
+  transition: transform 0.2s ease-in; 
+  transform: translateX(-5px);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.781);
+}

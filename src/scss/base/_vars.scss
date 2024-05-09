@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+:root {
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  --font-main: 'Inter', sans-serif;
+  --font-accent: 'Kanit', sans-serif;
+  --font-other: 'Jockey One', sans-serif;
+
+  --text-color: #ffffff;
+  --accent: #ac182c;
+  
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+
+  --linear-bg: linear-gradient(
+    120deg,
+    rgba(21, 26, 51, 0.795) 10%,
+    rgba(14, 18, 41, 0.986) 90%
+  );
+}
+
+
+
+.dark{
+    --page-bg: #252526;
+    --text-color: #fff;
+}
+

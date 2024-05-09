@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACH,gBAAgB,EAAE,OAAgB;EAClC,OAAO,EAAE,SAAS;EAClB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;;ACJtB,OAAO;EACH,gBAAgB,EAAE,OAAkB;EACpC,OAAO,EAAE,SAAS;EAClB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM",
+"sources": ["blocks/_header.scss","blocks/_footer.scss"],
+"names": [],
+"file": "main.css"
+}

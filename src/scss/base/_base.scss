@@ -1,0 +1,12 @@
+html{
+    font-family: var(--font-main);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body{
+    background: var(--linear-bg);
+    color: var(--text-color);
+    font-family: var(--font-main);
+}

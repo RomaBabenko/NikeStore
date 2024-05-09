@@ -1,0 +1,25 @@
+.container__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 70px 0 0 0;
+
+  img {
+    position: absolute;
+    left: -20%;
+    top: 9%;
+  }
+}
+
+.background__text {
+  position: absolute;
+  left: 20%;
+  top: 8%;
+
+  font-family: var(--font-accent);
+  font-size: 550px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.3);
+}

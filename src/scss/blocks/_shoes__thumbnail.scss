@@ -1,0 +1,51 @@
+@mixin background($angle,$color1,$color2) {
+  background: linear-gradient(
+    $angle, 
+    $color1, 
+    $color2);
+}
+
+.shoes__thumbnail {
+  position: absolute;
+  top: 49%;
+  left: 45%;
+  
+  div {
+    transform: skew(-45deg, 0);
+  }
+}
+.thumbnail-photo {
+  width: 150px;
+  height: 150px;
+
+  > * {
+    transform: skew(45deg, 0);
+  }
+
+  img {
+    position: absolute;
+    bottom: -29px;
+    right: -9px
+  }
+
+  &--photo-1 {
+    position: absolute;
+    top: -50px;
+    left: 317px;
+    @include background(45deg,#0085FF,#FF67F9)
+  }
+  
+  &--photo-2 {
+    position: absolute;
+    top: 118px;
+    left: 150px;
+    @include background(45deg,#905CFF,#CC0087)
+  }
+  
+  &--photo-3 {
+    position: absolute;
+    top: 286px;
+    left: -17px;
+    @include background(45deg,#fff,#FF5353)
+  }
+}

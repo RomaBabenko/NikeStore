@@ -1,0 +1,17 @@
+.slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  pointer-events: all;
+
+  &::before {
+    content: "";
+  }
+
+  cursor: grab;
+
+  &::active {
+    cursor: grabbing;
+  }
+}
